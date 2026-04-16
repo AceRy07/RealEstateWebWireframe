@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuxeEstate | Exquisite Luxury Real Estate</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline-variant": "#4e4636",
+                        "primary": "#eec152",
+                        "surface-container-low": "#131b2e",
+                        "secondary-fixed": "#d4e4fa",
+                        "on-surface": "#dae2fd",
+                        "surface": "#0b1326",
+                        "on-primary": "#3f2e00",
+                        "surface-container": "#171f33",
+                        "inverse-on-surface": "#283044",
+                        "on-tertiary-fixed": "#001946",
+                        "background": "#0b1326",
+                        "secondary-fixed-dim": "#b9c8de",
+                        "on-surface-variant": "#d1c5b0",
+                        "tertiary": "#b1c5ff",
+                        "secondary-container": "#39485a",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary": "#233143",
+                        "secondary": "#b9c8de",
+                        "on-secondary-fixed": "#0d1c2d",
+                        "on-tertiary-container": "#13397e",
+                        "tertiary-container": "#87a5f1",
+                        "surface-container-highest": "#2d3449",
+                        "on-secondary-fixed-variant": "#39485a",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "on-primary-fixed": "#251a00",
+                        "on-tertiary-fixed-variant": "#224489",
+                        "tertiary-fixed": "#dae2ff",
+                        "inverse-primary": "#775a00",
+                        "inverse-surface": "#dae2fd",
+                        "on-secondary-container": "#a7b6cc",
+                        "surface-dim": "#0b1326",
+                        "on-primary-fixed-variant": "#5a4300",
+                        "on-primary-container": "#4d3900",
+                        "surface-bright": "#31394d",
+                        "error": "#ffb4ab",
+                        "on-background": "#dae2fd",
+                        "primary-container": "#cba135",
+                        "surface-variant": "#2d3449",
+                        "surface-container-lowest": "#060e20",
+                        "primary-fixed": "#ffdf9a",
+                        "surface-container-high": "#222a3d",
+                        "primary-fixed-dim": "#eec152",
+                        "tertiary-fixed-dim": "#b1c5ff",
+                        "outline": "#9a8f7c",
+                        "on-tertiary": "#002c70",
+                        "surface-tint": "#eec152"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(11, 19, 38, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .glass-search {
+            background: rgba(49, 57, 77, 0.4);
+            backdrop-filter: blur(32px);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(238, 193, 82, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-[0px_20px_40px_rgba(90,67,0,0.12)]">
+<div class="flex justify-between items-center px-12 py-6 w-full">
+<div class="text-2xl font-['Noto_Serif'] font-bold text-[#eec152]">LuxeEstate</div>
+<div class="hidden md:flex items-center gap-10 font-['Noto_Serif'] text-sm tracking-widest uppercase">
+<a class="text-[#eec152] border-b border-[#eec152] pb-1" href="#">Home</a>
+<a class="text-[#dae2fd] hover:text-[#eec152] transition-colors" href="#">Listings</a>
+<a class="text-[#dae2fd] hover:text-[#eec152] transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-[#eec152] text-[#3f2e00] px-6 py-2.5 rounded-lg font-label font-bold text-xs uppercase tracking-widest hover:bg-[#cba135] transition-all duration-300 scale-95 active:scale-90">
+                Get in Touch
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Modern minimalist luxury villa with infinity pool at twilight, warm interior lighting reflecting on water, cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0U61R9eDvdgVsBOXoNY_eTvB_EP4hC0NCVE0EwXz6IfvOGRyfHV6s7_vgbWV0sjCtVucYSJhQo8goHab20xmsfsxQZG3LKbsaIF5pugrAUaLaDd8I4OYMcVGGu24nf5VxO1NW7BSerFYVKOfNl46VuavE9KWQX4lyPf5zhOI1_MpSXrZ8KXwMxayva9UoTc5Tgq1IG7G4YdKN2-4ByJNM2KFO5Vl-lBhjWoLD2jOfJfYzsc0fLLLIJRwnMtuBJCHozLv3jxen2-aF"/>
+<div class="absolute inset-0 bg-gradient-to-b from-[#0b1326]/80 via-[#0b1326]/40 to-[#0b1326]"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-5xl">
+<h1 class="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface mb-6 tracking-tight leading-tight">
+                Find Your <span class="text-primary italic">Dream Home</span>
+</h1>
+<p class="font-body text-xl md:text-2xl text-on-surface-variant font-light mb-12 tracking-wide">
+                Luxury properties in prime locations, curated for the discerning few.
+            </p>
+<!-- Search Bar -->
+<div class="glass-search p-2 md:p-4 rounded-xl max-w-4xl mx-auto shadow-2xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-center">
+<div class="px-4 py-3 bg-surface-container-lowest/50 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<input class="bg-transparent border-none text-on-surface placeholder:text-on-surface-variant/50 focus:ring-0 w-full text-sm" placeholder="Location" type="text"/>
+</div>
+<div class="px-4 py-3 bg-surface-container-lowest/50 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">payments</span>
+<select class="bg-transparent border-none text-on-surface focus:ring-0 w-full text-sm appearance-none">
+<option class="bg-surface-container-highest">Price Range</option>
+<option class="bg-surface-container-highest">$1M - $3M</option>
+<option class="bg-surface-container-highest">$3M - $10M</option>
+<option class="bg-surface-container-highest">$10M+</option>
+</select>
+</div>
+<div class="px-4 py-3 bg-surface-container-lowest/50 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">bed</span>
+<select class="bg-transparent border-none text-on-surface focus:ring-0 w-full text-sm appearance-none">
+<option class="bg-surface-container-highest">Bedrooms</option>
+<option class="bg-surface-container-highest">2+ Beds</option>
+<option class="bg-surface-container-highest">4+ Beds</option>
+<option class="bg-surface-container-highest">6+ Beds</option>
+</select>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 rounded-lg uppercase tracking-widest text-xs flex items-center justify-center gap-2 hover:shadow-[0_0_20px_rgba(238,193,82,0.4)] transition-all">
+<span class="material-symbols-outlined text-sm">search</span>
+                        Search Properties
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Properties -->
+<section class="py-24 px-12 max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<span class="text-primary font-label text-xs uppercase tracking-[0.3em] mb-4 block">Curated Selection</span>
+<h2 class="font-headline text-4xl text-on-surface">Featured Properties</h2>
+</div>
+<a class="text-primary border-b border-primary/30 pb-1 text-sm font-medium hover:border-primary transition-all" href="#">View All Collections</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Property Card 1 -->
+<div class="group bg-surface-container-low overflow-hidden rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ultra-modern glass mansion in Beverly Hills with evening sky, sleek geometric lines and warm interior glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJBrDuGFfTibn4uB-losEpLlnrz9L47GgXSg2Mylfu9xwS6bRJbf07Y00S-uCAmPHj-75kvGPi5RVtXU9yXK6qbJ9EEJiQJkK1gCq8726_PNy4w8RmowXP9bLsTShC3tCUALFV-rdIE0FFu9Kzxwkl6muFQ0ZMsXlPrOm2ajAcXNNa-_0_aoGOB5-nXeUU_5-JufZCquvzw-mpYsaxIt9gA62GToTqwyWWxEQJ_8fX-duR900V9C2yOZcJTjGKROVPfmjJZg_aheRf"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded text-[10px] font-bold uppercase tracking-tighter">Featured</div>
+</div>
+<div class="p-8">
+<h3 class="text-primary font-headline text-2xl mb-2">$8,500,000</h3>
+<p class="text-on-surface font-medium text-lg mb-4">The Obsidian Villa</p>
+<div class="flex items-center gap-6 text-on-surface-variant text-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">bed</span> 5 Beds</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">bathtub</span> 6 Baths</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">square_foot</span> 7,200 sqft</span>
+</div>
+</div>
+</div>
+<!-- Property Card 2 -->
+<div class="group bg-surface-container-low overflow-hidden rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Elegant Mediterranean estate with sprawling white arches, lush palm trees, and turquoise pool under clear sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHnwf077TGm0O0XHIyLRy97F7WJOw6OsiHXU3gpgW_W_qWekHIvz89x98jgxpvX552Kah3z0HBPsXls-t0Atlyd076eWRE9eR9qyOI_yBmJaf7eqOAHl_G2_2viC5v3FXLqW7eTPGU6xjx6dD4kghIQ3z-fW5req2mkDULUs15X3bS5FKuG6fvwo2hRuzuLd-UNOytfpcnI-bvsKn8VMQQmKlV6Y6K1GwlAUD1yxDk9hR0ysw5QXVqoEEVwyMqn2QdU1lLZzr-r6bu"/>
+</div>
+<div class="p-8">
+<h3 class="text-primary font-headline text-2xl mb-2">$12,200,000</h3>
+<p class="text-on-surface font-medium text-lg mb-4">Azure Coast Estate</p>
+<div class="flex items-center gap-6 text-on-surface-variant text-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">bed</span> 7 Beds</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">bathtub</span> 9 Baths</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">square_foot</span> 11,500 sqft</span>
+</div>
+</div>
+</div>
+<!-- Property Card 3 -->
+<div class="group bg-surface-container-low overflow-hidden rounded-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
+<div class="relative h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Contemporary mountain retreat with floor-to-ceiling windows, dark wood accents, and snowy pine forest surroundings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM9ZE_3ldFTGlrZMs94Ys1aAuY5W5pVQ_2ZLAWkAy4DZTgxcUy-pKtfNZBDHVDfqzS8sBViz1XBFqZqTck8y-rY08Y2GPJDfB0q9gWqzBivzN_kdWIvq3HQ4Y0EkO1Zw4KjUgcbmZLLYz_mOYB7i4RtC3qC_AyK5VHikYkQJi1qNnjdO2PtJbvETKawnrbzvNJZePMx94QO34P12TgnZI6lEQmdOV_zRkTaj8Kggu7F7b8YAqt95vXjQIIwmNpO54yaSAdmxzzXy83"/>
+</div>
+<div class="p-8">
+<h3 class="text-primary font-headline text-2xl mb-2">$5,900,000</h3>
+<p class="text-on-surface font-medium text-lg mb-4">Peak Sanctuary</p>
+<div class="flex items-center gap-6 text-on-surface-variant text-sm">
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">bed</span> 4 Beds</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">bathtub</span> 4 Baths</span>
+<span class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">square_foot</span> 5,800 sqft</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- All Properties Section -->
+<section class="bg-surface-container-lowest py-24 px-12">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
+<h2 class="font-headline text-4xl text-on-surface">Discover More</h2>
+<!-- Filter Bar -->
+<div class="flex flex-wrap gap-4 items-center bg-surface-container-low p-2 rounded-xl">
+<div class="px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-surface-variant border-r border-outline-variant/30">Sort By</div>
+<select class="bg-transparent border-none text-sm text-on-surface focus:ring-0 appearance-none pr-8 py-2">
+<option>Price (High to Low)</option>
+<option>Price (Low to High)</option>
+<option>Newest First</option>
+</select>
+<select class="bg-transparent border-none text-sm text-on-surface focus:ring-0 appearance-none pr-8 py-2">
+<option>All Types</option>
+<option>Mansions</option>
+<option>Penthouses</option>
+<option>Private Islands</option>
+</select>
+<button class="flex items-center gap-2 px-6 py-2 bg-surface-bright/20 hover:bg-surface-bright/40 rounded-lg text-xs font-bold uppercase tracking-widest text-primary transition-all">
+<span class="material-symbols-outlined text-sm">filter_list</span> Filters
+                    </button>
+</div>
+</div>
+<!-- Property Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+<!-- Repeat cards with different content -->
+<!-- Card 4 -->
+<div class="group bg-surface-container p-4 rounded-xl border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<img class="w-full h-64 object-cover rounded-lg mb-6" data-alt="Luxury coastal estate with limestone exterior and infinity pool overlooking the Mediterranean sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFcflYMLRLYHiBUlocTTXgzyOMfvJyX_-_o4sotSVLXUCo-jsCGoJlV2D7Tygh926i8Udt7iV1-v9g4r0waTGTQyHPwWOgR7AwRz9D2oXmqeP-eWjdJQzrtt1E5hDghnuVl2Pt7Kz9uD1nk2lznQvzDg2P5MeiOt7IOLdxB8iJRACPXiJk1_5N5v-pDJRnioDWl8PzjPFoZjsRa5gw8aTHuqKvTLNSB4zTOxW_qszqN7zTmVqlr6iiCYQl-ud-w_deFOWQVkYrPB6D"/>
+<p class="text-primary font-headline text-xl mb-1">$4,250,000</p>
+<p class="text-on-surface text-lg font-medium mb-3">The White Orchid</p>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Santorini, Greece</p>
+<div class="flex justify-between border-t border-outline-variant/10 pt-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">3 Bed</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">4 Bath</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">3,200 sqft</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group bg-surface-container p-4 rounded-xl border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<img class="w-full h-64 object-cover rounded-lg mb-6" data-alt="Interior shot of a luxury penthouse living room with double height ceilings and panoramic city skyline views" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGUiy0SupcjNHTTMB0hHVxdbXM39eFTmqjtQNIzYPpnne8_Hdob3f3OkvHljKLlgjgdKcxJcPACqo8yksUaeR470y3o6dwMuhG3SIqno_NYyDA-D9Dka-I_5lfB6tCgTwDnobVWP9vY2oOxrPOJrFeY0wDCVf2Epbc1XDaSQ2Wq4IMBhp3B7ltFK3XRkjoe4_ivhZ3uLh-31IGQ9TE9c6d1AMR8TVQX2Y9vw7FNsO-Xj-2EsRx2LfdgYMTcXs8Sq_qLHOvM_uCbXcH"/>
+<p class="text-primary font-headline text-xl mb-1">$7,800,000</p>
+<p class="text-on-surface text-lg font-medium mb-3">Skyloft Penthouse</p>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> New York, NY</p>
+<div class="flex justify-between border-t border-outline-variant/10 pt-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">4 Bed</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">4.5 Bath</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">4,800 sqft</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group bg-surface-container p-4 rounded-xl border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<img class="w-full h-64 object-cover rounded-lg mb-6" data-alt="Rustic modern woodland cabin with massive glass walls and warm interior lighting nestled in autumn woods" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrABgwolJzEr5qh-xmLW_9clV53N16RvIrJ6zjh9VsUOR8dE8QcOUTDa3dCbyB9oiuy1gDBPIvIQQBtfGw-nxXoc31OgyonxWqwjgoP7tNWw1NIMc0hHbTNnxEoyzdKh0A4okWGD_JrvROvC3mGZy1oeo_IlWBrkj0BCQnmZRCAHM_AbQ23F65NjNg7RS5KDYDKuSpsOt7aSTrrZFj82CXmvrkwhyB-eQHJDyevPuSiUHCKPad6kHgS8A6GMQ7TZBEkjgbNvnX0pJi"/>
+<p class="text-primary font-headline text-xl mb-1">$3,150,000</p>
+<p class="text-on-surface text-lg font-medium mb-3">Timberline Retreat</p>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Aspen, CO</p>
+<div class="flex justify-between border-t border-outline-variant/10 pt-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">5 Bed</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">5 Bath</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">6,100 sqft</span>
+</div>
+</div>
+<!-- Card 7 -->
+<div class="group bg-surface-container p-4 rounded-xl border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<img class="w-full h-64 object-cover rounded-lg mb-6" data-alt="Minimalist Zen-inspired mansion with concrete walls, linear water features, and manicured Japanese gardens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2MFuc4ZwjoGYswtN8iGprwvA16Gt39NZrvtASCz3MNsb9hLS22iVQ1MS4YDa5u11M1SQS1o-Ib0Fkwn7pzNB0OQIQDTeyu0XXHbhD9H2anBZteRayq7qfIi84c4erEn7DVogOHboQk7DImU3XpWAkddXDKKnwS2biiG4edMHwZ7YBwlecz9mlwUA48Y6ZSWZTLhqDcqoUWUI5oBJdII4gbEBpNsL52g1plbASJ5ZaI7vcWmY-8UV1GDpDSgQAvwYsKhC1njnUMaUj"/>
+<p class="text-primary font-headline text-xl mb-1">$14,000,000</p>
+<p class="text-on-surface text-lg font-medium mb-3">Zenith Gardens</p>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Kyoto, Japan</p>
+<div class="flex justify-between border-t border-outline-variant/10 pt-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">6 Bed</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">8 Bath</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">12,000 sqft</span>
+</div>
+</div>
+<!-- Card 8 -->
+<div class="group bg-surface-container p-4 rounded-xl border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<img class="w-full h-64 object-cover rounded-lg mb-6" data-alt="Classic Georgian style red brick manor with symmetric white windows and grand circular driveway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCXYllkbt3NBgUgoEqZjqeYGW-9g9h0SOZ-ECP9DF-PSYEjF0vcHDY3ZVv-oRgOgfRGGtbKkqnXdyzrUYDqiEHnlmxRFYKrkm6fzfkr56jLEI19YJv89KmV25Llwpx1gtShOKoONjfbeC1CW4NFUvBH2lTs5pJ6sov5KGyTW5b8UMxV3HrhfaVsFBvT3BsL-43W7G046pfA0jrGQtMChnmKZm4hd0MiHPcbCiEA652-SvW16u0ZKjeKfMOitreIZg63zB7OS-0bjmi"/>
+<p class="text-primary font-headline text-xl mb-1">$9,200,000</p>
+<p class="text-on-surface text-lg font-medium mb-3">The Heritage Estate</p>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> London, UK</p>
+<div class="flex justify-between border-t border-outline-variant/10 pt-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">8 Bed</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">10 Bath</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">15,400 sqft</span>
+</div>
+</div>
+<!-- Card 9 -->
+<div class="group bg-surface-container p-4 rounded-xl border border-outline-variant/5 transition-all hover:bg-surface-container-high">
+<img class="w-full h-64 object-cover rounded-lg mb-6" data-alt="High-tech modern desert home with steel cantilevers and floor-to-ceiling glass in Joshua Tree landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdoSMJiCfyjdgd_1iBrieE0gV7Iehnvs2TGYOe67QcpU2T1aFyj3FBN2_EmrqWdjFxGyPfT8lhS8PtO1O1GRuM_pN_95X8sdjk5-pvZVg33L2NZJvxeRJRh0yC7ybwUqEKi-dJTpOwiZhswlKfPSafuI8bKQ7Ee4YLVUGcVW3Z0z9iXoUrRdHDMOQd4PIauwWUFICVTnbX0y6WWi6WJeDY14AM2jQX1ydDyq3cYd09TJGmMBENJSfl03d4Jn3niMBdQjZERqPutUWG"/>
+<p class="text-primary font-headline text-xl mb-1">$6,400,000</p>
+<p class="text-on-surface text-lg font-medium mb-3">Desert Mirage</p>
+<p class="text-on-surface-variant text-sm mb-6 flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span> Palm Springs, CA</p>
+<div class="flex justify-between border-t border-outline-variant/10 pt-4">
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">4 Bed</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">5 Bath</span>
+<span class="text-xs font-bold text-on-surface-variant uppercase tracking-widest">5,200 sqft</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="relative py-32 px-12 text-center overflow-hidden">
+<div class="absolute inset-0 bg-surface-container-low/80 backdrop-blur-sm z-0"></div>
+<div class="absolute inset-0 z-[-1]">
+<img class="w-full h-full object-cover" data-alt="Close-up of high-end architectural drawings and blueprints on a mahogany desk with a designer's fountain pen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPTCDiBPvnxB9GlqK0RAwOv0V2WzqJ6fftE68KBx9hNuK5w01gywagZDsa81iuogjVvJbDfR1iGrAE1CNBGPIm2k1POxE9_jtS_2TDeK2DV94hrSa4bS45_pXcoKz84hEViWVpE5fB9CRw7IELmEGMOgMcLd50FLoZJUkFSGoo_mD6EI1efaX2EqaV24h8ow8l6JKCGd_ztMWJOFkmSEJYt2lxxK7LQ8rheiDfkl9netwX4Ny11ZAn8hzOrfGpxsd_tOQuv-30L2jm"/>
+</div>
+<div class="relative z-10 max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8">Looking to buy or sell property?</h2>
+<p class="font-body text-xl text-on-surface-variant/80 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                Our team of dedicated concierge agents is ready to assist you in navigating the global luxury market with absolute discretion and expertise.
+            </p>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-lg font-bold uppercase tracking-[0.2em] text-xs hover:bg-primary-container transition-all shadow-xl shadow-primary/20">
+                    Contact Us
+                </button>
+<button class="bg-surface-bright/20 backdrop-blur-md text-primary border border-primary/20 px-10 py-4 rounded-lg font-bold uppercase tracking-[0.2em] text-xs hover:bg-surface-bright/40 transition-all">
+                    Agent Services
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#131b2e] w-full py-20 border-t border-outline-variant/5">
+<div class="max-w-7xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
+<div class="col-span-1 md:col-span-1">
+<div class="text-2xl font-['Noto_Serif'] font-bold text-[#eec152] mb-6">LuxeEstate</div>
+<p class="font-['Inter'] text-xs text-[#dae2fd]/60 leading-relaxed mb-8">
+                        The ultimate destination for luxury real estate. We curate the world's most exquisite properties for those who demand excellence.
+                    </p>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full border border-[#dae2fd]/20 flex items-center justify-center text-[#eec152] hover:bg-[#eec152] hover:text-[#3f2e00] transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-8 h-8 rounded-full border border-[#dae2fd]/20 flex items-center justify-center text-[#eec152] hover:bg-[#eec152] hover:text-[#3f2e00] transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-[#eec152] font-bold text-xs uppercase tracking-[0.2em] mb-8">Navigation</h4>
+<ul class="flex flex-col gap-4 font-['Inter'] text-xs text-[#dae2fd]/60">
+<li><a class="hover:text-[#eec152] transition-all" href="#">Home</a></li>
+<li><a class="hover:text-[#eec152] transition-all" href="#">Listings</a></li>
+<li><a class="hover:text-[#eec152] transition-all" href="#">Neighborhoods</a></li>
+<li><a class="hover:text-[#eec152] transition-all" href="#">Agents</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#eec152] font-bold text-xs uppercase tracking-[0.2em] mb-8">Legal</h4>
+<ul class="flex flex-col gap-4 font-['Inter'] text-xs text-[#dae2fd]/60">
+<li><a class="hover:text-[#eec152] transition-all" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-[#eec152] transition-all" href="#">Terms of Service</a></li>
+<li><a class="hover:text-[#eec152] transition-all" href="#">Cookie Policy</a></li>
+<li><a class="hover:text-[#eec152] transition-all" href="#">Accessibility</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-[#eec152] font-bold text-xs uppercase tracking-[0.2em] mb-8">Join the Portfolio</h4>
+<p class="font-['Inter'] text-xs text-[#dae2fd]/60 mb-6">Receive exclusive market insights and private listings before they go public.</p>
+<div class="flex bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/10">
+<input class="bg-transparent border-none text-xs text-on-surface p-3 focus:ring-0 w-full" placeholder="Email address" type="email"/>
+<button class="bg-[#eec152] text-[#3f2e00] px-4"><span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 border-t border-outline-variant/10 pt-12">
+<div class="font-['Inter'] text-xs text-[#dae2fd]/60">© 2024 LuxeEstate. All rights reserved.</div>
+<div class="flex gap-8 font-['Inter'] text-xs text-[#dae2fd]/60">
+<span>Equal Housing Opportunity</span>
+<span>MLS Integration Verified</span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
